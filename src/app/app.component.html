@@ -1,6 +1,15 @@
- <ul>
-  <li *ngFor="let ar of arr">
-    <span *ngIf="ar%2 !=0">{{ar}}</span>
-
-  </li>
- </ul>
+ <table style="border: 1px solid black;">
+  <thead>
+    
+    <th>Firstname</th>
+    <th>lastname</th>
+    <th>age</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students">
+      <td>{{student.firstname}}</td>
+      <td>{{student.lastname}}</td>
+      <td>{{student.age}}</td>
+    </tr>
+  </tbody>
+ </table>
