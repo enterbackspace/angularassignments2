@@ -1,6 +1,32 @@
- <ul>
+ <!-- <ul>
   <li *ngFor="let ar of arr">
-    <span *ngIf="ar%2 !=0">{{ar}}</span>
+    <div class="d-flex flex-wrap justify-cotent-between">
+    <div>
+      <h3>Odd Numbers</h3>
+      <span *ngIf="ar%2 !=0">{{ar}}</span>
+
+    </div>
+    <div>
+      <h3>Even Numbers</h3>
+      <span *ngIf="ar%2===0">{{ar}}</span>
+
+
+    </div>
+    </div>
 
   </li>
+ </ul> -->
+ <b>Odd Numbers</b>
+ <ul>
+  <li *ngFor="let ar of arr ">
+    <b *ngIf="ar%2 !=0">{{ar}}</b>
+  </li>
  </ul>
+ <div> 
+  <i>Even Numbers</i>
+ <ul>
+  <li *ngFor="let ar of arr ">
+    <i *ngIf="ar%2 ===0">{{ar}}</i>
+  </li>
+ </ul>
+</div>
