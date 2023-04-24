@@ -7,5 +7,20 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularassignments2';
-  arr=[12,34,44,33,57,89,79]
+   students = [
+    {
+      firstname:"Praveen",
+      lastname:"Gubbala",
+      age:40
+    },
+    {
+      firstname:"Rohit",
+      lastname:"Sharma",
+      age:35
+    },
+    {
+      firstname:"Sachin",
+      lastname:"Tendulkar",
+      age:50
+    },]
 }
