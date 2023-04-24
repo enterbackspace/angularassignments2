@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularassignments2';
-  arr=[12,34,44,33,57,89,79]
+  multiDimArray: number[][] = [[1, 2], [3, 4, 5], [6]];
+flattenedArray: number[] = [];
+
+ngOnInit() {
+  this.flattenedArray = this.multiDimArray.flat();
+}
 }
