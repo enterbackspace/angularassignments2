@@ -1,8 +1,5 @@
-  <ol>
-    <li *ngFor="let ar of arr">
-      <div >  
-      <img [src]="ar" width="150px">
-    </div>
-
-    </li>
-  </ol>
+ <ul>
+  <li *ngFor="let ar of arr">
+<span *ngIf="ar<=25">{{ar}}</span>
+  </li>
+ </ul>
