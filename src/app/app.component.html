@@ -1,6 +1,19 @@
- <ul>
-  <li *ngFor="let ar of arr">
-    <span *ngIf="ar%2 !=0">{{ar}}</span>
-
-  </li>
- </ul>
+ <table>
+  <thead>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+    <th>Gender</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students">
+      <td>{{student.firstname}}</td>
+      <td>{{student.lastname}}</td>
+      <td>{{student.age}}</td>
+      <td>
+        <img src="{{student.gender==='male'?maleimage:femaleimage}}" width="140px">
+      </td>
+      
+    </tr>
+  </tbody>
+ </table>
