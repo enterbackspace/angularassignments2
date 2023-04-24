@@ -7,5 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularassignments2';
-  arr=[12,34,44,33,57,89,79]
+  arr=[{
+    firstname:"Edupoly",
+    Lastname:"Praveen",
+    age:34
+  }]
 }
