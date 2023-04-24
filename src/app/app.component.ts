@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularassignments2';
+  arr=['Babu','edupoly','Naveen','Sravan']
+  reverseArray: string[] = this.arr.map(str => str.split('').reverse().join(''));
 }
