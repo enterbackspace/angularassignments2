@@ -1,6 +1,10 @@
- <ul>
-  <li *ngFor="let ar of arr">
-    <span *ngIf="ar%2 !=0">{{ar}}</span>
-
-  </li>
- </ul>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <label>
+    <input type="checkbox" formControlName="checkbox1" value="1"> Checkbox 1
+  </label>
+  <label>
+    <input type="checkbox" formControlName="checkbox2" value="2"> Checkbox 2
+  </label>
+   
+  <button type="submit">Submit</button>
+</form>

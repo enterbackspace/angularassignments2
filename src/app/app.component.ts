@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angularassignments2';
-  arr=[12,34,44,33,57,89,79]
+  form: FormGroup;
+
+  constructor() {
+    this.form = new FormGroup({
+      checkbox1: new FormControl( '',),
+      checkbox2: new FormControl(''),
+    });
+  }
+
+  onSubmit() {
+    console.log(this.form.value);
+  }
 }
