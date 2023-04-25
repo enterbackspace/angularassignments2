@@ -1,6 +1,4 @@
- <ul>
-  <li *ngFor="let ar of arr">
-    <span *ngIf="ar%2 !=0">{{ar}}</span>
+ <div class="flex-container">
+  <h3 class="flex-item" *ngFor="let ar of arr">{{ar|uppercase}}</h3>
 
-  </li>
- </ul>
+ </div>
