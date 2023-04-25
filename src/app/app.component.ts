@@ -7,5 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularassignments2';
-  arr=[12,34,44,33,57,89,79]
+  arr:number=0;
+  brr:number=0;
+  total:number=0;
+  click(){
+    this.total=this.arr-this.brr;
+  }
 }

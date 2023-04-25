@@ -1,6 +1,4 @@
- <ul>
-  <li *ngFor="let ar of arr">
-    <span *ngIf="ar%2 !=0">{{ar}}</span>
-
-  </li>
- </ul>
+ <input type="text" [(ngModel)]="arr"> 
+ <input type="text" [(ngModel)]="brr"> 
+ <button (click)="click()">Substraction</button>
+ <h1 *ngIf="total">Total:{{total}}</h1>
