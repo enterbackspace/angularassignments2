@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angularassignments2';
-  arr=[12,34,44,33,57,89,79]
+  
+  maleImg="https://th.bing.com/th/id/OIP.zHMi4cVNwyF77ye0x8jScwHaH7?pid=ImgDet&rs=1"
+  femaleImg="https://cdn2.iconfinder.com/data/icons/avatars-2-7/128/28-1024.png"
+  gender=null
+
 }

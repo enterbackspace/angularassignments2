@@ -1,6 +1,5 @@
- <ul>
-  <li *ngFor="let ar of arr">
-    <span *ngIf="ar%2 !=0">{{ar}}</span>
-
-  </li>
- </ul>
+<input type="radio"  value="male" [(ngModel)]="gender">:Male
+<input type="radio" value="female" [(ngModel)]="gender">:Female
+<br>
+{{gender}}
+<img [src]="gender==='male'?maleImg:femaleImg" width="100px" *ngIf="gender!==null">
