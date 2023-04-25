@@ -7,5 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularassignments2';
-  arr=[12,34,44,33,57,89,79]
+  filledStars: string;
+
+  constructor() {
+    const num = 5;  
+    this.filledStars = '';
+    for (let i = 0; i < num; i++) {
+      this.filledStars += '*';
+    }
+  }
+
+  
 }
