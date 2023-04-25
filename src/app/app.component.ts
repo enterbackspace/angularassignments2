@@ -6,6 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angularassignments2';
-  arr=[12,34,44,33,57,89,79]
+  value1:number = 0;
+  value2:number = 0;
+  total:number=0;
+  
+  click(){
+  this.total=this.value1+this.value2
+
+  }
 }

@@ -1,6 +1,4 @@
- <ul>
-  <li *ngFor="let ar of arr">
-    <span *ngIf="ar%2 !=0">{{ar}}</span>
-
-  </li>
- </ul>
+ <input type="number" [(ngModel)]="value1">
+ <input type="number" [(ngModel)]="value2">
+ <button (click)="click()">Add</button>
+ <h1 *ngIf="total">{{total}}</h1>
