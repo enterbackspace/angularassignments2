@@ -1,3 +1,5 @@
- <h1>
-  Hello Edupoly
- </h1>
+ 
+ <li *ngFor="let ar of arr">
+  <h3 [ngStyle]="{color:ar % 2 == 0?'green':'red'}">{{ar}}</h3>
+  
+ </li>
