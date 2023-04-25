@@ -1,6 +1,7 @@
- <ul>
-  <li *ngFor="let ar of arr">
-    <span *ngIf="ar%2 !=0">{{ar}}</span>
-
-  </li>
- </ul>
+ <select [(ngModel)]="select" style="width: 190px;"  >
+  <option>India</option>
+  <option>America</option>
+  <option>Africa</option>
+ </select>
+ 
+ <h1>{{select}}</h1>
