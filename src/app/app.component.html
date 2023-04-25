@@ -1,6 +1,17 @@
- <ul>
-  <li *ngFor="let ar of arr">
-    <span *ngIf="ar%2 !=0">{{ar}}</span>
-
-  </li>
- </ul>
+<table>
+  <thead>
+    <tr>
+      <th>Student Name</th>
+      <th>Gender</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let student of students" [ngStyle]="{backgroundColor:student.gender === 'female' ? 'pink' : 'transparent'}">
+      <td>{{ student.firstname }}</td>
+      <td>{{ student.lastname }}</td>
+      <td>{{ student.age }}</td>
+      <td>{{ student.gender }}</td>
+    </tr>
+  </tbody>
+</table>
