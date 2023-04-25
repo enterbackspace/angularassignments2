@@ -1,6 +1,6 @@
- <ul>
-  <li *ngFor="let ar of arr">
-    <span *ngIf="ar%2 !=0">{{ar}}</span>
-
-  </li>
- </ul>
+ <input type="number"[(ngModel)]="num1"><br>
+ <input type="number"[(ngModel)]="num2"><br>
+ <button (click)="divi()">Div%</button>
+ <button (click)="muli()"> Mul*</button>
+ <h1 *ngIf="div">Result:{{div}}</h1>
+ <h1 *ngIf="mul">Result:{{mul}}</h1>

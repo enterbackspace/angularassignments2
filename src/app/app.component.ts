@@ -7,5 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularassignments2';
-  arr=[12,34,44,33,57,89,79]
+  num1:number=0;
+  num2:number=0;
+  mul:number=0;
+  div:number=0;
+  muli(){
+this.mul=this.num1*this.num2
+  }
+  divi(){
+this.div=this.num1/this.num2
+
+  
+  }
 }
