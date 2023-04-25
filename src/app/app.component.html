@@ -1,6 +1,12 @@
- <ul>
-  <li *ngFor="let ar of arr">
-    <span *ngIf="ar%2 !=0">{{ar}}</span>
-
-  </li>
- </ul>
+ <table  *ngFor="let ar of students">
+  <div [ngClass]="{ 'male': ar.gender === 'male', 'female': ar.gender === 'female' }"> 
+  <tbody>
+    <tr >
+      <td>{{ar.firstname}}</td>
+      <td>{{ar.lastname}}</td>
+      <td>{{ar.age}}</td>
+      <td>{{ar.gender}}</td>
+    </tr>
+  </tbody>
+</div>
+ </table>
