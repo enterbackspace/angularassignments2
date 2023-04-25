@@ -9,3 +9,4 @@ export class AppComponent {
   title = 'angularassignments2';
   arr=[12,-5,-1,2,-3,-6]
 }
+ 
