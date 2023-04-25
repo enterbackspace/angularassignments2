@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularassignments2';
-  arr=[12,34,44,33,57,89,79]
+arr=[12,11,22,33,34,55,80,56,99]
 }
