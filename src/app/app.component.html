@@ -1,6 +1,6 @@
- <ul>
-  <li *ngFor="let ar of arr">
-    <span *ngIf="ar%2 !=0">{{ar}}</span>
+  <div>
+    <li *ngFor=" let ar of arr">
+    <h2 [ngStyle]="{color:ar>0?'green':'red'}">{{ar}}</h2>
 
-  </li>
- </ul>
+    </li>
+  </div>
