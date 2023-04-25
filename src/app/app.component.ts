@@ -7,5 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularassignments2';
-  arr=[12,34,44,33,57,89,79]
+  valueString:any[]=[]
+  clickme(){
+    console.log(this.valueString)
+  }
 }
