@@ -1,6 +1,6 @@
- <ul>
-  <li *ngFor="let ar of arr">
-    <span *ngIf="ar%2 !=0">{{ar}}</span>
-
+ <div>
+  <li *ngFor="let ar of ar ; let i=index">
+    <h4>{{i+1}}{{ar}} 
+</h4>
   </li>
- </ul>
+ </div>
