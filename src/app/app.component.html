@@ -1,6 +1,9 @@
- <ul>
-  <li *ngFor="let ar of arr">
-    <span *ngIf="ar%2 !=0">{{ar}}</span>
+<input type="text" [(ngModel)]="newTodo">
+<button (click)="addTodo()">Add</button>
 
+<ul>
+  <li *ngFor="let todo of todos">
+    {{ todo }}
+    <button (click)="delete(todo)">Delete</button>
   </li>
- </ul>
+</ul>
