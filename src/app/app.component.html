@@ -1,6 +1,3 @@
- <ul>
-  <li *ngFor="let ar of arr">
-    <span *ngIf="ar%2 !=0">{{ar}}</span>
-
-  </li>
- </ul>
+<input type="radio" name="gender" value="male" (change)="displaySelectedValue($event)"> Male
+<input type="radio" name="gender" value="female" (change)="displaySelectedValue($event)"> Female
+<h1 *ngIf="selectedValue">Selected Value: {{ selectedValue }}</h1>

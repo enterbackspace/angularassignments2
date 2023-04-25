@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angularassignments2';
-  arr=[12,34,44,33,57,89,79]
+   
+  selectedValue: string = '';
+
+  displaySelectedValue(event: any) {
+    this.selectedValue = event.target.value;
+  }
 }
