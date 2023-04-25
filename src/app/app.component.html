@@ -1,6 +1,7 @@
- <ul>
-  <li *ngFor="let ar of arr">
-    <span *ngIf="ar%2 !=0">{{ar}}</span>
-
-  </li>
- </ul>
+ 
+<div class="stopwatch">
+  <h2>{{ time | date:'mm:ss' }}</h2>
+  <button (click)="start()" [disabled]="running">Start</button>
+  <button (click)="stop()" [disabled]="!running">Stop</button>
+  <button (click)="reset()">Reset</button>
+</div>

@@ -6,6 +6,25 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angularassignments2';
-  arr=[12,34,44,33,57,89,79]
+  public time = 0;
+  public running = false;
+  start() {
+    this.running = true;
+    setTimeout(() => {
+      if (this.running) {
+        this.time++;
+        this.start();
+      }
+    },1000);
+  }
+
+  stop() {
+    this.running = false;
+  }
+
+  reset() {
+    this.time = 0;
+    this.running = false;
+  }
+
 }
