@@ -1,6 +1,9 @@
- <ul>
-  <li *ngFor="let ar of arr">
-    <span *ngIf="ar%2 !=0">{{ar}}</span>
+  <div
+     *ngFor="let ar of ob">
+      <h4>Fistname:{{ar.fistname}}</h4>
+      <h4>Lastname:{{ar.lastname}}</h4>
+      <h4>Age:{{ar.age}}</h4>
+      <h4>Gender:{{ar.gender}}</h4>
 
-  </li>
- </ul>
+
+  </div>
