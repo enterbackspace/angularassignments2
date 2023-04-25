@@ -6,6 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angularassignments2';
-  arr=[12,34,44,33,57,89,79]
+  onClick(event: MouseEvent){
+      const xPosition = event.clientX;
+      const yPosition = event.clientY;
+      console.log(`Clicked at (${xPosition}, ${yPosition})`);
+    }
+  
 }
