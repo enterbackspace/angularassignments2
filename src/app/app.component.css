@@ -1,0 +1,14 @@
+table{
+    border: 1px solid black;
+    width: 300px;
+    height: fit-content;
+    padding: 10px;
+    margin:10px
+}
+td{
+    padding: 10px;
+
+}
+ div{
+    padding: 10px;
+ }
