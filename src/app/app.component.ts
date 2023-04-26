@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { interval, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -6,25 +7,39 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public time = 0;
-  public running = false;
+  public seconds: number = 0;
+  public minutes: number = 0;
+  public hours: number = 0;
+  timer:any
+
+  constructor() {
+
+  }
+
+  ngOnInit() {}
+
   start() {
-    this.running = true;
-    setTimeout(() => {
-      if (this.running) {
-        this.time++;
-        this.start();
+    this.timer = interval(1000).subscribe(() => {
+      this.seconds++;
+      if (this.seconds === 60) {
+        this.seconds = 0;
+        this.minutes++;
+        if (this.minutes === 60) {
+          this.minutes = 0;
+          this.hours++;
+        }
       }
-    },1000);
+    });
   }
 
   stop() {
-    this.running = false;
+    this.timer.unsubscribe();
   }
 
   reset() {
-    this.time = 0;
-    this.running = false;
+    this.timer.unsubscribe();
+    this.seconds = 0;
+    this.minutes = 0;
+    this.hours = 0;
   }
-
 }

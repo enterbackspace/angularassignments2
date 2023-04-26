@@ -1,7 +1,7 @@
- 
-<div class="stopwatch">
-  <h2>{{ time | date:'mm:ss' }}</h2>
-  <button (click)="start()" [disabled]="running">Start</button>
-  <button (click)="stop()" [disabled]="!running">Stop</button>
-  <button (click)="reset()">Reset</button>
-</div>
+<div>
+    <h1>{{ hours }}:{{ minutes }}:{{ seconds }}</h1>
+    <button (click)="start()">Start</button>
+    <button (click)="stop()">Stop</button>
+    <button (click)="reset()">Reset</button>
+  </div>
+  
