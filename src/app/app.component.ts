@@ -6,11 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    count:number=0;
+    like:number=0;
+    dislike:number=0;
    li(){
-    this.count++;
+    this.like++;
    }
    di(){
-    this.count--;
+    this.dislike--;
    }
 }
