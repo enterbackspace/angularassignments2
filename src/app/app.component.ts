@@ -12,6 +12,6 @@ export class AppComponent {
     this.like++;
    }
    di(){
-    this.dislike--;
+    this.dislike++;
    }
 }
